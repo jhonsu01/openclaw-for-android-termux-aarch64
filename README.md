@@ -52,7 +52,7 @@ npm install -g pnpm
 ```
 5. Clone and Compile OpenClaw
 ```bash
-git clone [https://github.com/openclaw/openclaw.git](https://github.com/openclaw/openclaw.git)
+git clone https://github.com/openclaw/openclaw.git
 cd openclaw
 ```
 # Install dependencies and build
