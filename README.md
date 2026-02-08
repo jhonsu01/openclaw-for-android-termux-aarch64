@@ -28,25 +28,25 @@ proot-distro install ubuntu
 
 ## 3. Linux Environment Setup (Ubuntu)
 
-# Enter the distribution
+Enter the distribution
 ```bash
 proot-distro login ubuntu
 ```
 
-# Update and install system dependencies
+Update and install system dependencies
 ```bash
 apt update && apt upgrade -y
 apt install git curl build-essential python3 cmake openssh-server -y
 ```
 ## 4. Install Node.js v22 & PNPM
 
-# Install Node.js
+Install Node.js
 ```bash
 curl -fsSL [https://deb.nodesource.com/setup_22.x](https://deb.nodesource.com/setup_22.x) | bash -
 apt install -y nodejs
 ```
 
-# Install pnpm globally
+Install pnpm globally
 ```bash
 npm install -g pnpm
 ```
@@ -55,7 +55,7 @@ npm install -g pnpm
 git clone https://github.com/openclaw/openclaw.git
 cd openclaw
 ```
-# Install dependencies and build
+Install dependencies and build
 ```bash
 npm install
 npm run build
