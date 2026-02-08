@@ -20,7 +20,7 @@ This is a deployment guide for: [**OpenClaw/OpenClaw**](https://github.com/openc
 
 Install the base tools required to manage Linux distributions.
 
-```bash
+
 pkg update && pkg upgrade -y
 pkg install proot-distro -y
 proot-distro install ubuntu
@@ -29,7 +29,7 @@ Bash
 3. Linux Environment Setup (Ubuntu)
 
 # Enter the distribution
-```bash
+
 proot-distro login ubuntu
 
 # Update and install system dependencies
@@ -37,7 +37,7 @@ apt update && apt upgrade -y
 apt install git curl build-essential python3 cmake openssh-server -y
 
 4. Install Node.js v22 & PNPM
-Bash
+
 
 # Install Node.js
 curl -fsSL [https://deb.nodesource.com/setup_22.x](https://deb.nodesource.com/setup_22.x) | bash -
@@ -47,7 +47,7 @@ apt install -y nodejs
 npm install -g pnpm
 
 5. Clone and Compile OpenClaw
-Bash
+
 
 git clone [https://github.com/openclaw/openclaw.git](https://github.com/openclaw/openclaw.git)
 cd openclaw
@@ -59,17 +59,17 @@ npm run build
 6. Initial Configuration & Pairing (Onboard & Pairing)
 
     Install PM2 (Process Manager):
-    Bash
+   
 
     npm install -g pm2
 
     Run Onboarding: Follow the on-screen instructions to configure your AI models and providers.
-    Bash
+   
 
     node dist/index.js onboard
 
     Account Pairing: Use the code provided by your Telegram bot or the system:
-    Bash
+  
 
     # Replace ABC123 with your actual code
     node dist/index.js pairing approve telegram ABC123
@@ -77,7 +77,7 @@ npm run build
 7. Start OpenClaw in Background (PM2)
 
 Once configured, launch the Gateway to keep it running 24/7.
-Bash
+
 
 pm2 start dist/index.js --name "openclaw-gateway" -- gateway start
 
