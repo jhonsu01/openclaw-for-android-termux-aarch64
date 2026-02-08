@@ -26,7 +26,7 @@ pkg install proot-distro -y
 proot-distro install ubuntu
 ```
 
-3. Linux Environment Setup (Ubuntu)
+## 3. Linux Environment Setup (Ubuntu)
 
 # Enter the distribution
 ```bash
@@ -38,7 +38,7 @@ proot-distro login ubuntu
 apt update && apt upgrade -y
 apt install git curl build-essential python3 cmake openssh-server -y
 ```
-4. Install Node.js v22 & PNPM
+## 4. Install Node.js v22 & PNPM
 
 # Install Node.js
 ```bash
@@ -50,7 +50,7 @@ apt install -y nodejs
 ```bash
 npm install -g pnpm
 ```
-5. Clone and Compile OpenClaw
+## 5. Clone and Compile OpenClaw
 ```bash
 git clone https://github.com/openclaw/openclaw.git
 cd openclaw
@@ -60,7 +60,7 @@ cd openclaw
 npm install
 npm run build
 ```
-6. Initial Configuration & Pairing (Onboard & Pairing)
+## 6. Initial Configuration & Pairing (Onboard & Pairing)
 
 Install PM2 (Process Manager):
 ```bash
@@ -77,7 +77,7 @@ Account Pairing: Use the code provided by your Telegram bot or the system:
 ```bash
 node dist/index.js pairing approve telegram ABC123
 ```
-7. Start OpenClaw in Background (PM2)
+## 7. Start OpenClaw in Background (PM2)
 
 Once configured, launch the Gateway to keep it running 24/7.
 ```bash
@@ -97,6 +97,11 @@ Restart:
 ```bash
 pm2 restart openclaw-gateway
 ```
+## Screenshots
+![Onboard](images/onboard.png)
+![p2m](images/p2m.png)
+![Agent Telegram](images/agent.png)
+
 📱 About the Author & Social Media
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/jhonsupelano/)
