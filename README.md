@@ -20,67 +20,69 @@ This is a deployment guide for: [**OpenClaw/OpenClaw**](https://github.com/openc
 
 Install the base tools required to manage Linux distributions.
 
-
+```bash
 pkg update && pkg upgrade -y
 pkg install proot-distro -y
 proot-distro install ubuntu
-Bash
+```
 
 3. Linux Environment Setup (Ubuntu)
 
 # Enter the distribution
-
+```bash
 proot-distro login ubuntu
+```
 
 # Update and install system dependencies
+```bash
 apt update && apt upgrade -y
 apt install git curl build-essential python3 cmake openssh-server -y
-
+```
 4. Install Node.js v22 & PNPM
 
-
 # Install Node.js
+```bash
 curl -fsSL [https://deb.nodesource.com/setup_22.x](https://deb.nodesource.com/setup_22.x) | bash -
 apt install -y nodejs
+```
 
 # Install pnpm globally
+```bash
 npm install -g pnpm
-
+```
 5. Clone and Compile OpenClaw
-
-
+```bash
 git clone [https://github.com/openclaw/openclaw.git](https://github.com/openclaw/openclaw.git)
 cd openclaw
-
+```
 # Install dependencies and build
+```bash
 npm install
 npm run build
-
+```
 6. Initial Configuration & Pairing (Onboard & Pairing)
 
-    Install PM2 (Process Manager):
-   
-
-    npm install -g pm2
-
-    Run Onboarding: Follow the on-screen instructions to configure your AI models and providers.
-   
-
-    node dist/index.js onboard
-
-    Account Pairing: Use the code provided by your Telegram bot or the system:
-  
+Install PM2 (Process Manager):
+```bash
+npm install -g pm2
+```
+Run Onboarding: Follow the on-screen instructions to configure your AI models and providers.
+```bash
+node dist/index.js onboard
+```
+Account Pairing: Use the code provided by your Telegram bot or the system:
 
     # Replace ABC123 with your actual code
-    node dist/index.js pairing approve telegram ABC123
 
+```bash
+node dist/index.js pairing approve telegram ABC123
+```
 7. Start OpenClaw in Background (PM2)
 
 Once configured, launch the Gateway to keep it running 24/7.
-
-
+```bash
 pm2 start dist/index.js --name "openclaw-gateway" -- gateway start
-
+```
 Management Commands:
 
     View logs: pm2 logs openclaw-gateway
