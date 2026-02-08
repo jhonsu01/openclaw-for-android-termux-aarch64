@@ -42,7 +42,7 @@ apt install git curl build-essential python3 cmake openssh-server -y
 
 Install Node.js
 ```bash
-curl -fsSL [https://deb.nodesource.com/setup_22.x](https://deb.nodesource.com/setup_22.x) | bash -
+curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
 apt install -y nodejs
 ```
 
