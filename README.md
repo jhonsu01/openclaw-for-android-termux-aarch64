@@ -24,11 +24,12 @@ Install the base tools required to manage Linux distributions.
 pkg update && pkg upgrade -y
 pkg install proot-distro -y
 proot-distro install ubuntu
-
-3. Linux Environment Setup (Ubuntu)
 Bash
 
+3. Linux Environment Setup (Ubuntu)
+
 # Enter the distribution
+```bash
 proot-distro login ubuntu
 
 # Update and install system dependencies
