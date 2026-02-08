@@ -97,16 +97,17 @@ Restart:
 ```bash
 pm2 restart openclaw-gateway
 ```
+##📱 About the Author & Social Media
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/jhonsupelano/)
+- 🐦 [X](https://x.com/JHONSU777)
+- ▶️ [YouTube](https://www.youtube.com/@JhonSupelanoRojas)
+
 ## Screenshots
 ![Onboard](images/onboard.png)
 ![p2m](images/p2m.png)
 ![Agent Telegram](images/agent.png)
 
-📱 About the Author & Social Media
-
-- 💼 [LinkedIn](https://www.linkedin.com/in/jhonsupelano/)
-- 🐦 [X](https://x.com/JHONSU777)
-- ▶️ [YouTube](https://www.youtube.com/@JhonSupelanoRojas)
 
 Feel free to connect with me for more AI and Tech content:
 📄 License
