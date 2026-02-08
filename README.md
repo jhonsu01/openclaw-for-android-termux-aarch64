@@ -97,7 +97,8 @@ Restart:
 ```bash
 pm2 restart openclaw-gateway
 ```
-##📱 About the Author & Social Media
+## 📱 About the Author & Social Media
+Feel free to connect with me for more AI and Tech content:
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/jhonsupelano/)
 - 🐦 [X](https://x.com/JHONSU777)
@@ -108,8 +109,6 @@ pm2 restart openclaw-gateway
 ![p2m](images/p2m.png)
 ![Agent Telegram](images/agent.png)
 
-
-## Feel free to connect with me for more AI and Tech content:
 
 ## 📄 License
 This project is licensed under the MIT License.
