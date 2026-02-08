@@ -85,13 +85,23 @@ pm2 start dist/index.js --name "openclaw-gateway" -- gateway start
 ```
 Management Commands:
 
-    View logs: pm2 logs openclaw-gateway
-
-    Process status: pm2 list
-
-    Restart: pm2 restart openclaw-gateway
-
+View logs: 
+```bash
+pm2 logs openclaw-gateway
+```
+Process status: 
+```bash
+pm2 list
+```
+Restart: 
+```bash
+pm2 restart openclaw-gateway
+```
 📱 About the Author & Social Media
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/jhonsupelano/)
+- 🐦 [X](https://x.com/JHONSU777)
+- ▶️ [YouTube](https://www.youtube.com/@JhonSupelanoRojas)
 
 Feel free to connect with me for more AI and Tech content:
 📄 License
@@ -99,8 +109,8 @@ Feel free to connect with me for more AI and Tech content:
 This project is licensed under the MIT License.
 🛠️ Troubleshooting
 
-    Wakelock: Ensure you enable "Acquire wakelock" in the Termux notification drawer to prevent Android from suspending the CPU.
+Wakelock: Ensure you enable "Acquire wakelock" in the Termux notification drawer to prevent Android from suspending the CPU.
 
-    Systemd Error: You can safely ignore systemctl unavailable errors. PM2 handles process management correctly.
+Systemd Error: You can safely ignore systemctl unavailable errors. PM2 handles process management correctly.
 
-    Remote Access: If you cannot access the Dashboard from your PC, edit ~/.openclaw/config.toml and set host = "0.0.0.0".
+Remote Access: If you cannot access the Dashboard from your PC, edit ~/.openclaw/config.toml and set host = "0.0.0.0".
