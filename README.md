@@ -85,7 +85,7 @@ Install PM2 (Process Manager):
 npm install -g pm2
 ```
 
-## 7. Start OpenClaw in Background (PM2)
+## 7. Start OpenClaw in Background (PM2) optional
 
 Once configured, launch the Gateway to keep it running 24/7.
 ```bash
