@@ -68,12 +68,13 @@ node dist/index.js onboard
 ```
 Account Pairing: Use the code provided by your Telegram bot or the system:
 
-    # Replace ABC123 with your actual code
     
 ```bash
 node dist/index.js gateway
 ```
 write message bot telegram and request code pairing
+
+    # Replace ABC123 with your actual code
 
 ```bash
 node dist/index.js pairing approve telegram ABC123
@@ -125,5 +126,7 @@ This project is licensed under the MIT License.
 Wakelock: Ensure you enable "Acquire wakelock" in the Termux notification drawer to prevent Android from suspending the CPU.
 
 Systemd Error: You can safely ignore systemctl unavailable errors. PM2 handles process management correctly.
+
+Note: ⚠️Some Android models block the network and this may not work; it works on older Android models.
 
 Remote Access: If you cannot access the Dashboard from your PC, edit ~/.openclaw/config.toml and set host = "0.0.0.0".
