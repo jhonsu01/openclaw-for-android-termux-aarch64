@@ -80,13 +80,16 @@ write message bot telegram and request code pairing
 node dist/index.js pairing approve telegram ABC123
 ```
 
-Install PM2 (Process Manager):
 ```bash
-npm install -g pm2
+node dist/index.js gateway
 ```
 
 ## 7. Start OpenClaw in Background (PM2) optional
 
+Install PM2 (Process Manager):
+```bash
+npm install -g pm2
+```
 Once configured, launch the Gateway to keep it running 24/7.
 ```bash
 pm2 start dist/index.js --name "gateway" -- gateway start
