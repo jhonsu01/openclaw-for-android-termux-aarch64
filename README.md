@@ -14,8 +14,13 @@ This is a deployment guide for: [**OpenClaw/OpenClaw**](https://github.com/openc
 **IMPORTANT:** Do NOT use the Google Play Store version, as it is outdated and will cause repository errors.
 
 * **Download:** [Termux on F-Droid](https://f-droid.org/es/packages/com.termux/)
-* **Note:** After installation, grant storage permissions by running: `termux-setup-storage`.
-
+* **Note:** After installation, grant storage permissions by running:
+```bash  
+termux-setup-storage
+```
+```bash  
+termux-wake-lock
+```
 ## 2. Termux Preparation
 
 Install the base tools required to manage Linux distributions.
