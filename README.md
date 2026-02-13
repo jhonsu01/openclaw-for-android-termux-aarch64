@@ -67,6 +67,8 @@ cd openclaw
 Install dependencies and build
 ```bash
 pnpm install
+```
+```bash
 pnpm build
 ```
 ## 6. Initial Configuration & Pairing (Onboard & Pairing)
