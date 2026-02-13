@@ -48,6 +48,8 @@ apt install git curl build-essential python3 pip cmake libvips-dev openssh-serve
 Install Node.js
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+```
+```bash
 apt install -y nodejs
 ```
 
@@ -58,6 +60,8 @@ npm install -g pnpm@10.23.0
 ## 5. Clone and Compile OpenClaw
 ```bash
 git clone https://github.com/openclaw/openclaw.git
+```
+```bash
 cd openclaw
 ```
 Install dependencies and build
