@@ -55,7 +55,7 @@ apt install -y nodejs
 
 Install pnpm globally
 ```bash
-npm install -g pnpm@10.23.0
+npm install -g pnpm@10.29.3
 ```
 ## 5. Clone and Compile OpenClaw
 ```bash
