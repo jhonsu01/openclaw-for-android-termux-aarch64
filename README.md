@@ -57,68 +57,35 @@ Install pnpm globally
 ```bash
 npm install -g pnpm@10.29.3
 ```
-## 5. Clone and Compile OpenClaw
+## 5. Install OpenClaw
 ```bash
-git clone https://github.com/openclaw/openclaw.git
-```
-```bash
-cd openclaw
-```
-Install dependencies and build
-```bash
-pnpm install
-```
-```bash
-pnpm build
-```
-## 6. Initial Configuration & Pairing (Onboard & Pairing)
-
-Run Onboarding: Follow the on-screen instructions to configure your AI models and providers.
-```bash
-node dist/index.js onboard
-```
-Account Pairing: Use the code provided by your Telegram bot or the system:
-
-    
-```bash
-node dist/index.js gateway
-```
-write message bot telegram and request code pairing
-
-    # Replace ABC123 with your actual code
-
-```bash
-node dist/index.js pairing approve telegram ABC123
+npm install -g openclaw@latest
 ```
 
+## 6. Fix Android Network Error
+
+Create a hijack script
 ```bash
-node dist/index.js gateway
+cat <<EOF > /root/hijack.js
+const os = require('os');
+os.networkInterfaces = () => ({});
+EOF
+```
+```bash
+echo 'export NODE_OPTIONS="-r /root/hijack.js"' >> ~/.bashrc
+source ~/.bashrc
+```
+## 7. Start OpenClaw 
+```bash
+openclaw gateway --verbose
+```
+other console
+
+```bash
+openclaw tui
 ```
 
-## 7. Start OpenClaw in Background (PM2) optional
 
-Install PM2 (Process Manager):
-```bash
-npm install -g pm2
-```
-Once configured, launch the Gateway to keep it running 24/7.
-```bash
-pm2 start dist/index.js --name "gateway" -- gateway start
-```
-Management Commands:
-
-View logs: 
-```bash
-pm2 logs gateway
-```
-Process status: 
-```bash
-pm2 list
-```
-Restart: 
-```bash
-pm2 restart gateway
-```
 ## 📱 About the Author & Social Media
 Feel free to connect with me for more AI and Tech content:
 
